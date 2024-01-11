@@ -42,7 +42,27 @@ namespace UPDATEFOREACHPROGRAM
             // 2-bytes
             char myChar = 'C';
 
+            // Typa Casting -- changing one data type to another.
+            // IMPLICIT -- happens automatically when going smaller -> larger
+            //char -> int -> float-> double 
+            
+            int myInt = 3;
+            double myDouble = myInt;
+            Console.WriteLine(myDouble);
 
+            // EXPLICIT -- Must be done manually when going larger -> smaller
+            // double -> float -> long -> int -> char
+            double exampleDouble = 3.33333333D;
+            int myInt = (int) myDouble;
+
+            // Conversaion Methods
+            Convert.Tostring() // String
+            Convert.ToDouble() // Double
+            Convert.Toint32() //Integer
+            Convert.ToInt64() // Long
+
+
+            
         }
     }
 }
